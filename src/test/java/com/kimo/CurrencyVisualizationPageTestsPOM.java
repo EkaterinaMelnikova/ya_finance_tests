@@ -17,7 +17,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Tag("finance")
-public class CurrencyVisualizationPageTestsPOM extends TestBase {
+public class CurrencyVisualizationPageTestsPOM extends TestBaseRemote {
 
 
     CurrencyVisualizationPage currencyVisualizationPage = new CurrencyVisualizationPage();

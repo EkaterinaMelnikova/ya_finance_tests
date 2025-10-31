@@ -2,7 +2,9 @@ package com.kimo;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 
+@Tag("finance")
 public class TestBase {
 
     @BeforeAll
