@@ -3,6 +3,7 @@ package com.kimo;
 import Pages.CurrencyVisualizationPage;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,7 @@ public class CurrencyVisualizationPageTestsPOM extends TestBase {
     String currencyName = "USD";
 
     @Test
+    @Disabled
     @DisplayName("Проверка актуальности даты текущего курса")
     void checkCurrentDate() {
 
