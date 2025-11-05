@@ -19,7 +19,7 @@ public class CurrencyVisualizationPageTestsPOM extends TestBaseRemote {
     String currencyName = "USD";
 
     @Test
-    //@Disabled
+   @Disabled
     @DisplayName("Проверка актуальности даты текущего курса")
     void checkCurrentDate() {
 

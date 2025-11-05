@@ -27,14 +27,28 @@ allure {
 
 
 dependencies {
-    testImplementation (
+    testImplementation(
             "com.codeborne:selenide:6.19.1",
             "org.junit.jupiter:junit-jupiter:5.9.3",
-            "io.qameta.allure:allure-selenide:2.30.0")
+            "io.qameta.allure:allure-selenide:2.30.0",
+            "org.slf4j:slf4j-simple:1.7.32")
 }
 
-test {
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 
 
@@ -49,3 +63,36 @@ tasks.register('finance_test', Test) {
         includeTags("finance")
     }
 }
+
+
+tasks.register('one_property_test', Test) {
+    useJUnitPlatform {
+        includeTags("one_property")
+    }
+}
+
+tasks.register('hello_test', Test) {
+    useJUnitPlatform {
+        includeTags("hello")
+    }
+}
+
+
+tasks.register('two_test', Test) {
+    useJUnitPlatform {
+        includeTags("hello")
+        includeTags("one_property")
+    }
+}
+
+
+
+tasks.register('tag_example_test', Test) {
+    useJUnitPlatform {
+        includeTags("needed", "negative")
+        excludeTags("prod")
+    }
+}
+
+
+
