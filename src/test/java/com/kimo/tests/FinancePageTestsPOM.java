@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-@Tag("Jenkins")
+//@Tag("Jenkins")
 public class FinancePageTestsPOM extends TestBaseRemote {
 
     FinancePage financePage = new FinancePage();
@@ -19,24 +19,25 @@ public class FinancePageTestsPOM extends TestBaseRemote {
 
 
     @Test
+    @Tag("Jenkins")
     @Owner("e.melnikova")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Проверка перехода в окно Курсы валют по кнопке Валюты > Показать все")
+    @DisplayName("Checking the transition to the Exchange Rates window by clicking the Currencies > Show All button")
     void openCurrenciesPageTest() {
 
-        step("Открыть страницу яндекс.финансы", () -> {
+        step("Open the Yandex.Finance page", () -> {
             financePage.openPage();
         });
 
-        step("Кликнуть на Валюты", () -> {
+        step("Click on Currencies", () -> {
             financePage.clickLinkCurrencies();
         });
 
-        step("Кликнуть Показать все", () -> {
+        step("Click Show All", () -> {
             financePage.clickLinkShowAll();
         });
 
-        step("Проверить заголовок открывшейся страницы", () -> {
+        step("Check the title of the page that opens", () -> {
             financePage.checkPageName(pageName);
         });
 
