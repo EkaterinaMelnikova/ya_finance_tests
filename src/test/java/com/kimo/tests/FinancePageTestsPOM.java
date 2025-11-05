@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-@Tag("finance")
+@Tag("Jenkins")
 public class FinancePageTestsPOM extends TestBaseRemote {
 
     FinancePage financePage = new FinancePage();

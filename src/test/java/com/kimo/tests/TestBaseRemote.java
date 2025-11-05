@@ -15,22 +15,21 @@ import java.util.Map;
 @Tag("finance")
 public class TestBaseRemote {
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://yandex.ru";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        Configuration.browser = "chrome";
-        Configuration.timeout = 10000;
-        //        Configuration.holdBrowserOpen = true;
 
+    @BeforeAll
+    static void beforeAll (){
+        Configuration.baseUrl = "https://yandex.ru";
+        Configuration.browserSize = System.getProperty("windowSize", "1920x1080");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("version", "100.0");
+        Configuration.timeout = 10000;
+        Configuration.remote = "https://user1:1234@" + System.getProperty("baseUrl", "selenoid.autotests.cloud/") + "wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                "enableVNC", true,
-                "enableVideo", true
-        ));
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
     }
+
 
     @BeforeEach
     void addListener(){

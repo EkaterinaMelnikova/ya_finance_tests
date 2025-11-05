@@ -96,3 +96,10 @@ tasks.register('tag_example_test', Test) {
 
 
 
+tasks.register('run_tests', Test) {
+    useJUnitPlatform {
+        includeTags("Jenkins")
+    }
+}
+
+
