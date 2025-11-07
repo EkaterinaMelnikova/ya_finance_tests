@@ -21,7 +21,7 @@ public class TestBaseRemote {
         Configuration.baseUrl = "https://yandex.ru";
         Configuration.browserSize = System.getProperty("windowSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("version", "100.0");
+        Configuration.browserVersion = System.getProperty("version", "129.0");
         Configuration.timeout = 10000;
         Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         //Configuration.remote = "https://user1:1234@" + System.getProperty("baseUrl", "selenoid.autotests.cloud/") + "wd/hub";
