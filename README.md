@@ -14,7 +14,7 @@
 - [Примеры видео запуска тестов в Selenoid и Browserstack](#-примеры-видео-запуска-тестов-в-selenoid-и-browserstack)
 
 ## :open_book: Описание
-В проекте реализованы UI, API и Mobile тесты для веб и мобильного приложения Todoist.
+В проекте реализованы UI тесты для веб приложения yandex_finance.
 
 ## :computer: Использованный стек технологий
 
@@ -28,20 +28,11 @@
 <code><img width="6%" title="Gradle" src="images/logo/Gradle.svg"></code>
 <code><img width="6%" title="JUnit5" src="images/logo/JUnit5.svg"></code>
 <code><img width="6%" title="GitHub" src="images/logo/GitHub.svg"></code>
-<code><img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
-<code><img width="6%" title="AndroidStudio" src="images/logo/AndroidStudio.svg"></code>
-<code><img width="5%" title="Appium" src="images/logo/Appium.svg"></code>
-<code><img width="5%" title="RestAssured" src="images/logo/RestAssured.png"></code>
-<code><img width="6%" title="Browserstack" src="images/logo/Browserstack.svg"></code>
-<code><img width="6%" title="Telegram" src="images/logo/Telegram.svg"></code>
 </p>
 
 Автотесты написаны на <code>Java</code> с использованием <code>JUnit 5</code> и <code>Gradle</code>.
 Для UI-тестов использован фреймворк [Selenide](https://selenide.org/).
-API тесты используют фреймворк [RestAssured](https://rest-assured.io/).
-Автотесты для мобильных устройств написаны с помощью [Selenide](https://selenide.org/) и [Appium](https://appium.io/).
-Запуск тестов можно осуществлять локально или в [Selenoid](https://aerokube.com/selenoid/) и [Browserstack](https://www.browserstack.com/).
-Также реализована сборка в <code>Jenkins</code> с формированием Allure-отчета и отправкой уведомления с результатами в <code>Telegram</code> после завершения прогона.
+Запуск тестов можно осуществлять локально или в [Selenoid](https://aerokube.com/selenoid/)
 
 Allure-отчет включает в себя:
 * шаги выполнения тестов;
@@ -80,10 +71,6 @@ gradle clean webTests
 gradle clean webTests -Denv=remote
 ```
 
-Запуск тестов на мобильное приложение в Browserstack
-```
-gradle clean mobileTests -Denv=remote -DdeviceHost=browserstack
-```
 
 При необходимости также можно переопределить параметры запуска
 
@@ -150,7 +137,3 @@ gradle clean webTests -Denv=remote
   <img title="Selenoid Video" src="images/gif/selenoidVideoExample.gif">
 </p>
 
-Пример видео из Browserstack
-<p align="center">
-  <img width="80%" title="Selenoid Video" src="images/gif/browserstackVideoExample.gif">
-</p>
