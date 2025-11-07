@@ -101,30 +101,8 @@ Allure-отчет включает в себя:
 ### Результат выполнения теста
 
 <p align="center">
-<img title="Test Results in Alure" src="images/screenshots/allureReportTest.png">
+<img title="Test Results in Alure" src="images/screenshots/allure_steps.png">
 </p>
-
-### <img width="4%" style="vertical-align:middle" title="AllureTO" src="images/logo/AllureTO.svg"> Интеграция с Allure TestOps
-Тестовая сборка в Jenkins интегрирована с Allure TestOps. В Allure TestOps автоматически обновляется список тест-кейсов и результаты выполнения тестов.
-<p align="center">
-<img width="100%" title="Allure TestOps Cases - Feature view" src="images/screenshots/testOpsCasesFeature.png">
-</p>
-
-### Интеграция с Jira
-Также полученные из автотестов тест-кейсы прикреплены к задаче в Jira.
-<p align="center">
-<img width="100%" title="Allure TestOps Cases - Feature view" src="images/screenshots/jiraIntegration.png">
-</p>
-
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
-
-После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
-
-<p align="center">
-<img width="70%" title="Telegram Notifications" src="images/screenshots/notificationExample.png">
-</p>
-
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"><img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Browserstack.svg"> Примеры видео запуска тестов в Selenoid и Browserstack
 
 При запуске тестов в remote-окружении к каждому тесту в отчете прилагается видео.
 <p>Пример видео из Selenoid</p>
