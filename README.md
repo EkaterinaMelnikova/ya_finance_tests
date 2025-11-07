@@ -100,7 +100,6 @@ Allure-отчет включает в себя:
 <img title="Test Results in Alure" src="images/screenshots/allure_steps.png">
 </p>
 
-При запуске тестов в remote-окружении к каждому тесту в отчете прилагается видео.
 <p>Пример видео из Selenoid</p>
 <p align="center">
   <img title="allure_video" src="images/video/allure_video.gif">
