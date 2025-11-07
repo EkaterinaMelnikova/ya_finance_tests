@@ -9,10 +9,6 @@
 - [Запуск тестов](#running_woman-запуск-тестов)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Пример Allure-отчета](#-пример-allure-отчета)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
-- [Интеграция с Jira](#интеграция-с-jira)
-- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
-- [Примеры видео запуска тестов в Selenoid и Browserstack](#-примеры-видео-запуска-тестов-в-selenoid-и-browserstack)
 
 ## :open_book: Описание
 В проекте реализованы UI тесты для веб приложения yandex_finance.
@@ -105,7 +101,7 @@ Allure-отчет включает в себя:
 * логи браузерной консоли;
 * видео выполнения автотеста.
 
-<p>Пример видео из Selenoid</p>
+<p>Пример видео </p>
 <p align="center">
   <img title="Selenoid Video" src="images/video/allure_video.mp4">
 </p>
