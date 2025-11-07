@@ -1,5 +1,5 @@
 # Проект по автоматизации тестирования приложения yandex.finance
-<img width="100%" style="vertical-align:middle" title="Todoist" src="images/screenshots/todoist.jpeg">
+<img width="100%" style="vertical-align:middle" title="yandex.ru/finance" src="images/screenshots/yandex_finance.png">
 
 ## :pushpin: Содержание:
 
