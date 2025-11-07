@@ -83,10 +83,6 @@
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/AllureReport.svg"> Пример Allure-отчета
 ### Overview
 
-<p align="center">
-<img title="Allure Overview" src="images/screenshots/allure_report.png">
-</p>
-
 ### Результат выполнения теста
 
 Allure-отчет включает в себя:
@@ -95,6 +91,10 @@ Allure-отчет включает в себя:
 * Page Source;
 * логи браузерной консоли;
 * видео выполнения автотеста.
+
+<p align="center">
+<img title="Allure Overview" src="images/screenshots/allure_report.png">
+</p>
 
 <p align="center">
 <img title="Test Results in Alure" src="images/screenshots/allure_steps.png">
