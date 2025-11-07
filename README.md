@@ -61,14 +61,14 @@ gradle clean webTests -Denv=remote
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="images/logo/Jenkins.svg"> Сборка в Jenkins
 <p align="center">
-<img title="Jenkins Build" src="images/screenshots/jenkinsBuild.png">
+<img title="Jenkins Build" src="images/screenshots/jenkins.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/AllureReport.svg"> Пример Allure-отчета
 ### Overview
 
 <p align="center">
-<img title="Allure Overview" src="images/screenshots/allureReportMain.png">
+<img title="Allure Overview" src="images/screenshots/allure_report.png">
 </p>
 
 ### Результат выполнения теста
