@@ -9,6 +9,10 @@
 - [Запуск тестов](#running_woman-запуск-тестов)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Пример Allure-отчета](#-пример-allure-отчета)
+- [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
+- [Интеграция с Jira](#интеграция-с-jira)
+- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+- [Примеры видео запуска тестов в Selenoid и Browserstack](#-примеры-видео-запуска-тестов-в-selenoid-и-browserstack)
 
 ## :open_book: Описание
 В проекте реализованы UI тесты для веб приложения yandex_finance.
@@ -48,6 +52,13 @@
 Для UI-тестов использован фреймворк [Selenide](https://selenide.org/).
 Запуск тестов можно осуществлять локально или в [Selenoid](https://aerokube.com/selenoid/)
 
+Allure-отчет включает в себя:
+* шаги выполнения тестов;
+* логирование отправленных API запросов
+* скриншот страницы в браузере в момент окончания автотеста;
+* Page Source;
+* логи браузерной консоли;
+* видео выполнения автотеста.
 
 ## :running_woman: Запуск тестов
 
@@ -93,16 +104,9 @@
 <img title="Test Results in Alure" src="images/screenshots/allure_steps.png">
 </p>
 
-Allure-отчет включает в себя:
-* шаги выполнения тестов;
-* логирование отправленных API запросов
-* скриншот страницы в браузере в момент окончания автотеста;
-* Page Source;
-* логи браузерной консоли;
-* видео выполнения автотеста.
-
-<p>Пример видео </p>
+При запуске тестов в remote-окружении к каждому тесту в отчете прилагается видео.
+<p>Пример видео из Selenoid</p>
 <p align="center">
-  <img title="Selenoid Video" src="images/video/allure_video.mp4">
+  <img title="Selenoid Video" src="images/gif/selenoidVideoExample.gif">
 </p>
 
