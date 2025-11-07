@@ -72,7 +72,7 @@ Allure-отчет включает в себя:
 ### Запуск тестов на удаленном браузере
 Для запуска web-тестов в selenoid
 ```
-gradle clean webTests -Denv=remote
+./gradlew finance_test
 ```
 
 
