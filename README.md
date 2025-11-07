@@ -52,13 +52,6 @@
 Для UI-тестов использован фреймворк [Selenide](https://selenide.org/).
 Запуск тестов можно осуществлять локально или в [Selenoid](https://aerokube.com/selenoid/)
 
-Allure-отчет включает в себя:
-* шаги выполнения тестов;
-* логирование отправленных API запросов
-* скриншот страницы в браузере в момент окончания автотеста;
-* Page Source;
-* логи браузерной консоли;
-* видео выполнения автотеста.
 
 ## :running_woman: Запуск тестов
 
@@ -104,9 +97,16 @@ Allure-отчет включает в себя:
 <img title="Test Results in Alure" src="images/screenshots/allure_steps.png">
 </p>
 
-При запуске тестов в remote-окружении к каждому тесту в отчете прилагается видео.
+Allure-отчет включает в себя:
+* шаги выполнения тестов;
+* логирование отправленных API запросов
+* скриншот страницы в браузере в момент окончания автотеста;
+* Page Source;
+* логи браузерной консоли;
+* видео выполнения автотеста.
+
 <p>Пример видео из Selenoid</p>
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/selenoidVideoExample.gif">
+  <img title="Selenoid Video" src="images/video/allure_video.mp4">
 </p>
 
