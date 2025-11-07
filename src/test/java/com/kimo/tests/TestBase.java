@@ -1,8 +1,10 @@
-package com.kimo;
+package com.kimo.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 
+@Tag("finance")
 public class TestBase {
 
     @BeforeAll

@@ -1,4 +1,4 @@
-package com.kimo;
+package com.kimo.tests;
 
 import Pages.FinancePage;
 import io.qameta.allure.Owner;
@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 @Tag("finance")
-public class FinancePageTestsPOM extends TestBase {
+public class FinancePageTestsPOM extends TestBaseRemote {
 
     FinancePage financePage = new FinancePage();
 

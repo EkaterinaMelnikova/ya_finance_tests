@@ -1,4 +1,4 @@
-package com.kimo;
+package com.kimo.tests;
 
 import Pages.CurrenciesPage;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 @Tag("finance")
-public class CurrenciesPageTestsPOM extends TestBase {
+public class CurrenciesPageTestsPOM extends TestBaseRemote {
 
     CurrenciesPage currenciesPage = new CurrenciesPage();
 
