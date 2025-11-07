@@ -107,6 +107,6 @@ Allure-отчет включает в себя:
 При запуске тестов в remote-окружении к каждому тесту в отчете прилагается видео.
 <p>Пример видео из Selenoid</p>
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/selenoidVideoExample.gif">
+  <img title="Selenoid Video" src="images/video/allure_video.mp4">
 </p>
 
