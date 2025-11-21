@@ -1,4 +1,4 @@
-package com.kimo;
+package com.kimo.tests;
 
 import Pages.CurrencyVisualizationPage;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -8,16 +8,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Tag("finance")
-public class CurrencyVisualizationPageTestsPOM extends TestBase {
+public class CurrencyVisualizationPageTestsPOM extends TestBaseRemote {
 
 
     CurrencyVisualizationPage currencyVisualizationPage = new CurrencyVisualizationPage();
@@ -25,7 +19,7 @@ public class CurrencyVisualizationPageTestsPOM extends TestBase {
     String currencyName = "USD";
 
     @Test
-    @Disabled
+    //@Disabled
     @DisplayName("Проверка актуальности даты текущего курса")
     void checkCurrentDate() {
 
