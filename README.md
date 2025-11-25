@@ -51,26 +51,16 @@
 
 ## :running_woman: Запуск тестов
 
-### Локальный запуск тестов
-Запуск web-тестов
+### Запуск из терминала
 ```
 ./gradlew finance_test
 ```
-
-
-### Запуск тестов на удаленном браузере
-Для запуска web-тестов в selenoid
-```
-./gradlew finance_test
-```
-
-
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="images/logo/Jenkins.svg"> Сборка в Jenkins
 
 **Configure:**
 - **Repository:** `https://github.com/EkaterinaMelnikova/ya_finance_tests.git` *(SCM > Git)*
-- **Branch:** `*/remote` *(SCM > Branches to build)*
+- **Branch:** `*/main` *(SCM > Branches to build)*
 - **Gradle Version:** `Gradle 8.12` *(Build Steps > Invoke Gradle)*
 - **Command:** `clean finance_test` *(Build Steps > Tasks)*
 - **Allure Path:** `build/allure-results/` *(Allure Report)*
