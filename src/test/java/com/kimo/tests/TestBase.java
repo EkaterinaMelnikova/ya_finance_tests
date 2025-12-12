@@ -1,4 +1,4 @@
-package com.kimo;
+package com.kimo.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;

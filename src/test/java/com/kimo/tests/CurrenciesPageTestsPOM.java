@@ -1,4 +1,4 @@
-package com.kimo;
+package com.kimo.tests;
 
 import Pages.CurrenciesPage;
 import com.codeborne.selenide.logevents.SelenideLogger;

@@ -1,4 +1,4 @@
-package com.kimo;
+package com.kimo.tests;
 
 import Pages.FinancePage;
 import io.qameta.allure.Owner;
