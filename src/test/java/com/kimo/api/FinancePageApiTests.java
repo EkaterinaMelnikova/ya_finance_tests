@@ -1,12 +1,9 @@
 package com.kimo.api;
 
-import org.hamcrest.Matchers;
-import org.junit.jupiter.api.Test;
 
+import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
-import static net.bytebuddy.matcher.ElementMatchers.is;
 import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.is;
 
 public class FinancePageApiTests {
 
@@ -39,6 +36,51 @@ public class FinancePageApiTests {
                 .log().body()
                 .statusCode(200)
                 .body(containsString("<title>Кредиты. Яндекс - поиск по финансам</title>"));;
+    }
+
+    @Test
+    void OpenOSAGOPageTest() {
+
+        given()
+                .log().uri()
+                .contentType("text/plain;charset=UTF-8")
+                .when()
+                .get("https://yandex.ru/finance/osago/calculator")
+                .then()
+                .log().status()
+                .statusCode(200)
+                .body(containsString("<title>ОСАГО — узнайте цены от 17 страховых и купите полис онлайн</title>"));;
+
+    }
+
+    @Test
+    void OpenMortgagePageTest() {
+
+        given()
+                .log().uri()
+                .contentType("text/plain;charset=UTF-8")
+                .when()
+                .get("https://yandex.ru/finance/mortgage")
+                .then()
+                .log().status()
+                .log().body()
+                .statusCode(200)
+                .body(containsString("<title>Ипотечные программы. Яндекс - поиск по финансам</title>"));;
+    }
+
+    @Test
+    void OpenFinanceDictionaryPageTest() {
+
+        given()
+                .log().uri()
+                .contentType("text/plain;charset=UTF-8")
+                .when()
+                .get("https://yandex.ru/finance/dictionary/n")
+                .then()
+                .log().status()
+                .log().body()
+                .statusCode(200)
+                .body(containsString("<title>Словарь экономических терминов — термины на букву Н</title>"));;
     }
 
 }
